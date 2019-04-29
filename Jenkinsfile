@@ -4,17 +4,27 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building ...'
             }
         }
-        stage('Test') {
+        stage('Static Metrics ') {
             steps {
-                echo 'Testing..'
+                echo 'Running Static Metrics ...'
             }
         }
-        stage('Deploy') {
+        stage('Impacted unit test') {
             steps {
-                echo 'Deploying....'
+                echo 'Running Impacted unit test ...'
+            }
+        }
+        stage('Auto-generate missing tests') {
+            steps {
+                echo 'Running Auto-generate missing tests ...'
+            }
+        }
+        stage('Requirements-Based tests') {
+            steps {
+                echo 'Running Requirements -Based tests ...'
             }
         }
     }
