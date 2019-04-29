@@ -15,6 +15,7 @@ pipeline {
         stage('Impacted unit test') {
             steps {
                 echo 'Running Impacted unit test ...'
+                cantataRunTest appendToTopLevelLog: true, arguments: '', cantataExecDir: 'Cantata/tests', execute: true, outputToConsole: true, pushToServer: true
             }
         }
         stage('Auto-generate missing tests') {
