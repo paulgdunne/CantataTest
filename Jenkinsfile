@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building ...'
-                dir("reverse_string") {
+                dir("D:/SHARED/Documents/git/CantataTest/reverse_string") {
                     sh """
                         ipg_comp --optfile ipg.cop --comp gcc -IC:/qa_systemsc/cantata/inc -O0 -g3 -Wall -c -fmessage-length=0 -o reverse_string.o reverse_string.c
                     """
