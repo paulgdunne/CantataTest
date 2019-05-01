@@ -10,7 +10,7 @@ pipeline {
                 echo 'Building ...'
                 	dir("reverse_string"){
                         echo 'me here!!! '
-                    	sh "more reverse_string.c"
+ //                   	sh "more reverse_string.c"
                 }
             }
         }
