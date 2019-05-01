@@ -9,9 +9,7 @@ pipeline {
             steps {
                 echo 'Building ...'
                 	dir("reverse_string"){
-                        echo 'me here!!! '
-                        bat 'echo %PATH%' 
-                        //                   	sh "more reverse_string.c"
+                        bat 'more reverse_string.c' 
                 }
             }
         }
