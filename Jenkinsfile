@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             environment {
-                PATH = "C:\\qa_systems\\cantata\\MinGW\msys\\1.0\\bin;${env.PATH}"
+                PATH = "C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;${env.PATH}"
             	steps {
                 	echo 'Building ...'
                 	dir("reverse_string"){
