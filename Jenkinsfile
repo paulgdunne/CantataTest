@@ -40,7 +40,7 @@ pipeline {
 //        }
         stage('Requirements-Based tests') {
             environment {
-                PATH = "D:\\SHARED\\Documents\\Jenkins\\Curl\c\url-7.64.1_1-win64-mingw\\curl-7.64.1-win64-mingw\\bin;${env.PATH}"
+                PATH = "D:\\SHARED\\Documents\\Jenkins\\Curl\\c\\url-7.64.1_1-win64-mingw\\curl-7.64.1-win64-mingw\\bin;${env.PATH}"
             }
             steps {
                 echo 'Running Requirements -Based tests ...'
