@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo 'Running Cantata Tests ...'
                 dir("reverse_string/Cantata/tests"){
-                    bat 'make all EXECUTE=1'
+                    bat 'make all EXECUTE=1 PUSH_TO_SERVER=1'
                 }
             }
         }
@@ -38,10 +38,14 @@ pipeline {
 //                echo 'Running Auto-generate missing tests ...'
 //            }
 //        }
-//        stage('Requirements-Based tests') {
-//            steps {
-//                echo 'Running Requirements -Based tests ...'
-//            }
-//        }
+        stage('Requirements-Based tests') {
+            environment {
+                PATH = "D:\\SHARED\\Documents\\Jenkins\\Curl\c\url-7.64.1_1-win64-mingw\\curl-7.64.1-win64-mingw\\bin;${env.PATH}"
+            }
+            steps {
+                echo 'Running Requirements -Based tests ...'
+                bat 'curl http://192.168.2.87:8085/cantata/rest/1.2/trace/reqSets/831?releaseTag=version-1.0.05 application/json'
+            }
+        }
     }
 }
