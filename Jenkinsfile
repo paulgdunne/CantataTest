@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             environment {
                 PATH = "C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;${env.PATH}"
-            	steps {
-                	echo 'Building ...'
+            }
+            steps {
+                echo 'Building ...'
                 	dir("reverse_string"){
-//                    	sh "more reverse_string.c"
-                	    }
-            	    }
+                    	sh "more reverse_string.c"
                 }
+            }
         }
         stage('Static Metrics ') {
             steps {
