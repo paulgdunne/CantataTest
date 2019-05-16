@@ -19,8 +19,8 @@ pipeline {
                 echo 'Running Cantata Tests ...'
                 dir("reverse_string/Cantata/tests"){
                     bat 'make clean'
-//                    bat 'make all EXECUTE=1 PUSH_TO_SERVER=1 VERBOSE=1'
-                    bat 'make all EXECUTE=1'
+                    bat 'make all EXECUTE=1 PUSH_TO_SERVER=1 VERBOSE=1'
+//                    bat 'make all EXECUTE=1'
                 }
             }
         }
