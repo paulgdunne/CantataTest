@@ -40,14 +40,14 @@ pipeline {
 //                echo 'Running Auto-generate missing tests ...'
 //            }
 //        }
-        stage('Requirements-Based tests') {
-            environment {
-                PATH = "D:\\SHARED\\Documents\\Jenkins\\Curl\\curl-7.64.1\\bin;${env.PATH}"
-            }
-            steps {
-                echo 'Running Requirements -Based tests ...'
-                bat 'curl http://192.168.2.87:8085/cantata/rest/1.2/trace/reqSets/831?releaseTag=version-1.0.05 application/json'
-            }
-        }
+//        stage('Requirements-Based tests') {
+//            environment {
+//                PATH = "D:\\SHARED\\Documents\\Jenkins\\Curl\\curl-7.64.1\\bin;${env.PATH}"
+//            }
+//            steps {
+//                echo 'Running Requirements -Based tests ...'
+//                bat 'curl http://192.168.2.87:8085/cantata/rest/1.2/trace/reqSets/831?releaseTag=version-1.0.05 application/json'
+//            }
+//        }
     }
 }
