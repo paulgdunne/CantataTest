@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-  //      stage('Build ...") {
-   //           dir("reverse_string"){
-  //                  bat 'C:\qa_systems_OLD\cantata8.0.1\MinGW\bin\gcc.exe -o reverse_string.o reverse_string.c'
-   //           }
-   //           }
-        stage("Generating Autotest Script ---paul") {
+        stage('Compile Source ") {
+              dir("reverse_string"){
+                    bat 'C:/qa_systems_OLD/cantata8.0.1/MinGW/bin/gcc.exe -c -o reverse_string.o reverse_string.c'
+              }
+         }
+        stage("Generating Autotest Script") {
             environment {
                 //PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;${env.PATH}"
                 PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;$PATH"
