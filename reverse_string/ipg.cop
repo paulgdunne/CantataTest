@@ -12,6 +12,6 @@
 "--parse:--line_directives"
 "--parse:-W2"
 "--sm:--call_seq_code"
-"--comp:x86-win-Demo-Target-ARM3-C"
+"--comp:x86-Win32-gcc4.6.2"
 
 #User Section
