@@ -7,12 +7,12 @@ pipeline {
   //                  bat 'C:\qa_systems_OLD\cantata8.0.1\MinGW\bin\gcc.exe -o reverse_string.o reverse_string.c'
    //           }
    //           }
-        stage('Generating Autotest Script') {
+        stage("Generating Autotest Script ---paul") {
             environment {
                 PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;${env.PATH}"
             }
             steps {
-                echo 'Generating Autotest Script ...'
+                echo "Generating Autotest Script ..."
                 	//dir("reverse_string"){
                      //   bat 'ipg_comp --optfile ipg.cop --comp gcc -IC:/qa_systemsc/cantata/inc -O0 -g3 -Wall -c -fmessage-length=0 -o reverse_string.o reverse_string.c'
                      //   bat 'cantpp -application com.ipl.products.eclipse.cantpp.testscript.AutoTestGenerator -noSplash -data ../ sourceDirectory=.'
