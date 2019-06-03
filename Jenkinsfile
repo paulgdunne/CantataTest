@@ -12,10 +12,10 @@ pipeline {
          }
         stage('Static Metric Thresholds') {
             steps {
-           //     echo "Compiling Source Code ..."
+                echo "Compiling Source Code ..."
            //   dir("reverse_string"){
            //         bat 'C:/qa_systems_OLD/cantata8.0.1/MinGW/bin/gcc.exe -c -o reverse_string.o reverse_string.c'
-              }
+           //  }
             }
          }
         stage('Generating Autotest Script') {
