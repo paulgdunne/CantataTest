@@ -35,10 +35,10 @@ pipeline {
                 echo 'Running Cantata Tests ...'
                 dir("reverse_string/Cantata/tests"){
          //           bat 'make clean'
-          //          bat 'set JENKINS_BUILD_ID=%BUILD_TAG%'
+                    bat 'set JENKINS_BUILD_ID=%BUILD_TAG%'
               //      bat 'echo %JENKINS_BUILD_ID%'
 //                    bat 'make all EXECUTE=1 PUSH_TO_SERVER=1'
-          //          bat 'make all EXECUTE=1'
+                    bat 'make all EXECUTE=1'
                 }
             }
         }
