@@ -52,9 +52,9 @@ pipeline {
             }
             steps {
                 echo 'Generating Cantata Reports ...'
-           //     dir("reverse_string"){
-          //          bat 'cantpp -application com.ipl.products.eclipse.cantpp.cdt.TestReportGenerator -noSplash -data .. . HTML_DETAILED_REPORT'
-          //      }
+                dir("reverse_string"){
+                    bat 'cantpp -application com.ipl.products.eclipse.cantpp.cdt.TestReportGenerator -noSplash -data .. . HTML_DETAILED_REPORT'
+                }
             }
         }
 //        stage('Auto-generate missing tests') {
