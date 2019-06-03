@@ -25,8 +25,8 @@ pipeline {
             steps {
                 echo "Generating Autotest Script ..."
                 	dir("reverse_string"){
-                        bat 'ipg_comp --optfile ../ipg.cop --comp gcc -IC:/qa_systemsc/cantata/inc -O0 -g3 -Wall -c -fmessage-length=0 -o reverse_string.o reverse_string.c'
-                        bat 'cantpp -application com.ipl.products.eclipse.cantpp.testscript.AutoTestGenerator -noSplash -data ../ sourceDirectory=.'
+                        bat 'ipg_comp --optfile ../ipg.cop --comp gcc -IC:/qa_systemsc/cantata/inc -O0 -g3 -c -fmessage-length=0 -o reverse_string.o reverse_string.c'
+                        bat 'cantpp -application com.ipl.products.eclipse.cantpp.testscript.AutoTestGenerator -noSplash -data=../ sourceDirectory=.'
                 }
             }
         }
@@ -34,11 +34,11 @@ pipeline {
             steps {
                 echo 'Running Cantata Tests ...'
                 dir("reverse_string/Cantata/tests"){
-                    bat 'make clean'
-                    bat 'set JENKINS_BUILD_ID=%BUILD_TAG%'
+         //           bat 'make clean'
+          //          bat 'set JENKINS_BUILD_ID=%BUILD_TAG%'
               //      bat 'echo %JENKINS_BUILD_ID%'
 //                    bat 'make all EXECUTE=1 PUSH_TO_SERVER=1'
-                    bat 'make all EXECUTE=1'
+          //          bat 'make all EXECUTE=1'
                 }
             }
         }
