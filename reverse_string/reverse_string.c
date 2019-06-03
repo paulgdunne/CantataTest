@@ -38,7 +38,7 @@ char* reverse_string(char* original_str)
          * Add the NULL terminator to the end of the reverse string
          */
         reverse_str[(end)] = '\0';
-        paul;
+
     }
 
     return reverse_str;
