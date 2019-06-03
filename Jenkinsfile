@@ -9,7 +9,7 @@ pipeline {
    //           }
         stage("Generating Autotest Script ---paul") {
             environment {
-                PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;${env.PATH}"
+              //  PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;${env.PATH}"
             }
             steps {
                 echo "Generating Autotest Script ..."
