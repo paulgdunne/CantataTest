@@ -47,18 +47,24 @@ pipeline {
                     bat 'make all EXECUTE=1 VERBOSE=1'
                 }
             }
-        }
-        stage('Generating Cantata Reports') {
-            environment {
-                PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;$PATH"
-            }
-            steps {
+             steps {
                 echo 'Generating Cantata Reports ...'
                 dir("reverse_string"){
                     bat 'cantpp -application com.ipl.products.eclipse.cantpp.cdt.TestReportGenerator -noSplash -data .. . HTML_DETAILED_REPORT'
                 }
             }
         }
+//        stage('Generating Cantata Reports') {
+//            environment {
+//                PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;$PATH"
+//            }
+//            steps {
+//                echo 'Generating Cantata Reports ...'
+//                dir("reverse_string"){
+//                    bat 'cantpp -application com.ipl.products.eclipse.cantpp.cdt.TestReportGenerator -noSplash -data .. . HTML_DETAILED_REPORT'
+//                }
+//            }
+//        }
 //        stage('Auto-generate missing tests') {
 //            steps {
 //                echo 'Running Auto-generate missing tests ...'
