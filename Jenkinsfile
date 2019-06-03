@@ -46,9 +46,7 @@ pipeline {
 //                    bat 'make all EXECUTE=1 PUSH_TO_SERVER=1'
                     bat 'make all EXECUTE=1 VERBOSE=1'
                 }
-            }
-             steps {
-                echo 'Generating Cantata Reports ...'
+                   echo 'Generating Cantata Reports ...'
                 dir("reverse_string"){
                     bat 'cantpp -application com.ipl.products.eclipse.cantpp.cdt.TestReportGenerator -noSplash -data .. . HTML_DETAILED_REPORT'
                 }
