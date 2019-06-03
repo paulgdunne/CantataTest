@@ -8,7 +8,7 @@
 #tool.use=true
 #tool.tests=Cantata
 #tool.version=2
-#tool.server=http://192.168.2.87:8085/cantata
+#tool.server=http://localhost:8080/cantata
 #tool.servercontainerid=139
 "--analyse"
 "--parse:--line_directives"
