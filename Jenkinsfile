@@ -12,7 +12,7 @@ pipeline {
          }
         stage('Static Metric Thresholds') {
             steps {
-                echo "Compiling Source Code ..."
+                echo "Checking Static Metrics ..."
            //   dir("reverse_string"){
            //         bat 'C:/qa_systems_OLD/cantata8.0.1/MinGW/bin/gcc.exe -c -o reverse_string.o reverse_string.c'
            //  }
@@ -20,7 +20,6 @@ pipeline {
          }
         stage('Generating Autotest Script') {
             environment {
-                //PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;${env.PATH}"
                 PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;$PATH"
             }
             steps {
@@ -34,13 +33,13 @@ pipeline {
         stage('Running Cantata Tests') {
             steps {
                 echo 'Running Cantata Tests ...'
-             //   dir("reverse_string/Cantata/tests"){
-               //     bat 'make clean'
-              //      bat 'set JENKINS_BUILD_ID=%BUILD_TAG%'
+                dir("reverse_string/Cantata/tests"){
+                    bat 'make clean'
+                    bat 'set JENKINS_BUILD_ID=%BUILD_TAG%'
               //      bat 'echo %JENKINS_BUILD_ID%'
 //                    bat 'make all EXECUTE=1 PUSH_TO_SERVER=1'
-              //      bat 'make all EXECUTE=1'
-            //    }
+                    bat 'make all EXECUTE=1'
+                }
             }
         }
         stage('Generating Cantata Reports') {
