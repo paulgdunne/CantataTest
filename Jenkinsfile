@@ -25,7 +25,7 @@ pipeline {
             steps {
                 echo "Generating Autotest Script ..."
                 	dir("reverse_string"){
-                        bat 'ipg_comp --optfile ipg.cop --comp gcc -IC:/qa_systemsc/cantata/inc -O0 -g3 -Wall -c -fmessage-length=0 -o reverse_string.o reverse_string.c'
+                        bat 'ipg_comp --optfile ../ipg.cop --comp gcc -IC:/qa_systemsc/cantata/inc -O0 -g3 -Wall -c -fmessage-length=0 -o reverse_string.o reverse_string.c'
                         bat 'cantpp -application com.ipl.products.eclipse.cantpp.testscript.AutoTestGenerator -noSplash -data ../ sourceDirectory=.'
                 }
             }
