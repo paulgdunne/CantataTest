@@ -32,6 +32,9 @@ pipeline {
             }
         }
         stage('Running Cantata Tests') {
+            environment {
+                PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;$PATH"
+            }
             steps {
                 echo 'Running Cantata Tests ...'
                 dir("reverse_string/Cantata/tests"){
@@ -39,7 +42,7 @@ pipeline {
                     bat 'set JENKINS_BUILD_ID=%BUILD_TAG%'
               //      bat 'echo %JENKINS_BUILD_ID%'
 //                    bat 'make all EXECUTE=1 PUSH_TO_SERVER=1'
-            //        bat 'make all EXECUTE=1'
+                    bat 'make all EXECUTE=1'
                 }
             }
         }
