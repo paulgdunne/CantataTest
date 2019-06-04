@@ -1,0 +1,43 @@
+Compiling (C) ... ../../reverse_string.c -> atest_reverse_string/reverse_string.o
+Cantata CPPCCD v9.0 (c) 2019 QA Systems GmbH
+Section: x86-Win32-gcc4.6.2
+ - registered as an AUTHORISED PLATFORM
+Processing ../../reverse_string.c
+Cantata CPPI   v9.0 (c) 2019 QA Systems GmbH
+Compiling with "gcc"
+Compiling (C) ... atest_reverse_string/atest_reverse_string.c -> atest_reverse_string/atest_reverse_string.o
+Cantata CPPCCD v9.0 (c) 2019 QA Systems GmbH
+Section: x86-Win32-gcc4.6.2
+ - registered as an AUTHORISED PLATFORM
+Processing atest_reverse_string/atest_reverse_string.c
+Cantata CPPI   v9.0 (c) 2019 QA Systems GmbH
+Compiling with "gcc"
+Linking (C) atest_reverse_string/atest_reverse_string.exe ...
+Cantata CPPCCD v9.0 (c) 2019 QA Systems GmbH
+Section: x86-Win32-gcc4.6.2
+ - registered as an AUTHORISED PLATFORM
+Cantata CPPTI  v9.0 (c) 2019 QA Systems GmbH
+Linking with "gcc"
+Built atest_reverse_string successfully
+Running atest_reverse_string ...
+===========================================================================
+= Cantata Test Harness v9.0                                               =
+= (c) 2019 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Test Description: reverse_string                                        =
+=         Log File: atest_reverse_string.ctr                              =
+=    Configuration: x86-Win32-gcc4.6.2                                    =
+=     Test Started: Tue Jun 04 13:01:46 2019                              =
+===========================================================================
+===========================================================================
+= Test Finished: Tue Jun 04 13:01:46 2019                                 =
+=-------------------------------------------------------------------------=
+= Test                 Script  Checks  Checks  Checks  Call Seq     TEST  =
+= Case                 Errors  Failed  Passed  Warned  Failures    RESULT =
+=-------------------------------------------------------------------------=
+= 1: reverse_string         0       0       1       0         0      PASS =
+= Other                     0       0       0       0         0      PASS =
+=-------------------------------------------------------------------------=
+= TOTALS                    0       0       1       0         0      PASS =
+===========================================================================
+Test complete

@@ -1,0 +1,15 @@
+===========================================================================
+= Cantata AutoTest Generation Report                                      =
+= (c) 2012 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Generation Date: 04-Jun-2019 13:01                                      =
+===========================================================================
+1 function fully tested.
+Files fully tested:
+- reverse_string.c (1.2 seconds)
+
+Files not fully tested:
+  - NONE
+
+Files not tested:
+  - NONE

@@ -1,0 +1,12 @@
+#
+# Cantata Test-Level Options
+#
+# Any options set in this file will override the options set in the
+# project-level options file.
+#
+# WARNING: Do not alter this file manually.
+#
+"--sm:--wrap:malloc(size_t)#reverse_string(char *)"
+"--sm:--wrap:strlen(const char *)#reverse_string(char *)"
+
+#User Section

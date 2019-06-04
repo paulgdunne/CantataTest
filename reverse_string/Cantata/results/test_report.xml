@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<?xml-stylesheet href="file:/C:/qa_systems/cantata/configuration/org.eclipse.osgi/565/0/.cp/xslt/HTML%20Detailed%20Report.xslt" type="text/xsl"?><testReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated=" 4th June 2019 13:01" xsi:noNamespaceSchemaLocation="test_report.xsd">
+  <project name="reverse_string">
+    <testScriptInfo>
+      <summary status="passed">
+        <testScripts>1</testScripts>
+        <testScriptsPass>1</testScriptsPass>
+        <testScriptsFail>0</testScriptsFail>
+        <testCases>1</testCases>
+        <testCasesPassed>1</testCasesPassed>
+        <testCasesFailed>0</testCasesFailed>
+        <checksPassed>1</checksPassed>
+        <checksFailed>0</checksFailed>
+        <checksWarning>0</checksWarning>
+        <scriptDirectives>2</scriptDirectives>
+        <scriptErrors>0</scriptErrors>
+        <callSequenceFailures>0</callSequenceFailures>
+        <userComments>0</userComments>
+      </summary>
+    </testScriptInfo>
+    <filterInfo>Filters Applied: None</filterInfo>
+    <coverageInfo>
+      <coverageAchieved/>
+    </coverageInfo>
+    <coverageTargets/>
+  </project>
+  <testResults>
+    <testScript>
+      <info>
+        <testScriptName>reverse_string</testScriptName>
+        <testScriptDescription>= Cantata Test Harness v9.0                                               =
+= (c) 2019 QA Systems GmbH                                                =
+=    Configuration: x86-Win32-gcc4.6.2                                    =
+=     Test Started: Tue Jun 04 13:01:46 2019                              =</testScriptDescription>
+        <testScriptFile name="atest_reverse_string.c" path="atest_reverse_string/"/>
+      </info>
+      <summary status="passed">
+        <testCases>1</testCases>
+        <testCasesPassed>1</testCasesPassed>
+        <testCasesFailed>0</testCasesFailed>
+        <checksPassed>1</checksPassed>
+        <checksFailed>0</checksFailed>
+        <checksWarning>0</checksWarning>
+        <scriptDirectives>2</scriptDirectives>
+        <scriptErrors>0</scriptErrors>
+        <scriptWarnings>0</scriptWarnings>
+        <callSequenceFailures>0</callSequenceFailures>
+        <userComments>0</userComments>
+      </summary>
+      <testScriptBody>
+        <testCase description="default case" title="1: reverse_string">
+          <summary status="passed">
+            <checksPassed>1</checksPassed>
+            <checksFailed>0</checksFailed>
+            <checksWarning>0</checksWarning>
+            <scriptDirectives>2</scriptDirectives>
+            <scriptErrors>0</scriptErrors>
+            <scriptWarnings>0</scriptWarnings>
+            <callSequenceFailures>0</callSequenceFailures>
+            <userComments>0</userComments>
+          </summary>
+          <contents>
+            <scriptDirective>
+              <position>
+                <sourceFile name="atest_reverse_string.c" path="atest_reverse_string/"/>
+                <lineNumber>100</lineNumber>
+              </position>
+              <name>Start Call Sequence Validation</name>
+              <description/>
+            </scriptDirective>
+            <check status="passed">
+              <position>
+                <sourceFile name="atest_reverse_string.c" path="atest_reverse_string/"/>
+                <lineNumber>106</lineNumber>
+              </position>
+              <name>returnValue = NULL</name>
+              <expectedValue>0x00000000</expectedValue>
+              <actualValue>0x00000000</actualValue>
+            </check>
+            <callSequenceScriptDir status="passed">
+              <position>
+                <sourceFile name="atest_reverse_string.c" path="atest_reverse_string/"/>
+                <lineNumber>109</lineNumber>
+              </position>
+              <name>End Call Sequence Validation </name>
+              <description/>
+            </callSequenceScriptDir>
+          </contents>
+        </testCase>
+      </testScriptBody>
+    </testScript>
+  </testResults>
+  <coverageReport/>
+</testReport>
