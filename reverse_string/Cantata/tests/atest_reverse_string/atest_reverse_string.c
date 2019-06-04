@@ -75,7 +75,7 @@ int main()
 /* cases off by adding comments*/
 void run_tests()
 {
-    test_1(0);
+    test_1(1);
 }
 
 /*****************************************************************************/
@@ -103,7 +103,7 @@ if (doIt) {
             returnValue = reverse_string(original_str);
 
             /* Test case checks */
-            CHECK_ADDRESS(returnValue, NULL);
+            CHECK_ADDRESS(returnValue, "PAUL");
             /* Checks on global data */
             check_global_data();
         END_CALLS();
