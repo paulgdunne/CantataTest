@@ -103,7 +103,7 @@ if (doIt) {
             returnValue = reverse_string(original_str);
 
             /* Test case checks */
-            CHECK_ADDRESS(returnValue, "PAUL");
+            CHECK_ADDRESS(returnValue, NULL);
             /* Checks on global data */
             check_global_data();
         END_CALLS();
