@@ -8,6 +8,7 @@ pipeline {
               dir("Values_Check_Target2"){
                //     bat 'C:/qa_systems_OLD/cantata8.0.1/MinGW/bin/gcc.exe -c -o values_check.o values_check.c'
                   bat 'gcc.exe -c -o values_check.o values_check.c'
+                  bat 'gcc --version'
               }
             }
          }
