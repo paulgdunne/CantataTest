@@ -27,40 +27,40 @@
 # test_A/custom_pre_build rule would be run before test_A was built.
 
 #
-# Define the command used to run QA-C/C++ on configured source code during test builds
+# An example rule for executing QAC for each test that is built. In the example the 'filelist.lst' file is assumed
+# to be located in the same directory as the test script, and must be created manually. It is also assumed that
+# all required QAC exectuables are available on the PATH, and QAC has been previously set up for use with the project
 #
-ifeq ($(RUN_QAC),1)
-define QAC_CMD
-        @$(ECHO_CMD_MED) ======================================================
-        @$(ECHO_CMD_MED) INVOKING QA-C/C++ ANALYSIS FOR $<
-        -@qacli analyze -P ../.. -fc $<
-        @$(ECHO_CMD_MED) ======================================================
-endef
-else
-define QAC_CMD
-        @$(ECHO_CMD_MED) Unused > $(DYNAMIC_THIS_TEST)/filelist.lst
-endef
-endif
+# %/custom_pre_build :
+#	@echo Running QAC on files listed in $*/filelist.lst
+#	@qaw qac -list $*/filelist.lst -plog
+#
+
+#
+# An example rule for executing QAC before any tests are built. In the example the 'filelist.lst' file is assumed
+# to be located in the 'tests' directory and must be created manually. It is also assumed that all required QAC 
+# exectuables are available on the PATH, and QAC has been previously set up for use with the project
+#
+# custom_pre_build :
+#	@echo Running QAC on files listed in filelist.lst
+#	@qaw qac -list filelist.lst -plog
+
 
 # The custom rules that can be modified are below:
 
 # This rule is automatically executed at the start of any build with the Cantata Makefiles
-.PHONY: custom_pre_build
 custom_pre_build :
 	@echo Performing pre build steps.
 
 # This rule is automatically executed at the end of any build with the Cantata Makefiles
-.PHONY: custom_post_build
-custom_post_build : 
+custom_post_build :
 	@echo Performing post build steps
 	@echo
 
 # This rule is automatically executed at the start of every individual test build	
-.PHONY: %/custom_pre_build
 %/custom_pre_build :
 	
 
 # This rule is automatically executed at the end of every individual test build
-.PHONY: %/custom_post_build
 %/custom_post_build :
 	
