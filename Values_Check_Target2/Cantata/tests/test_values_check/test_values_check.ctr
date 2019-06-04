@@ -1,0 +1,455 @@
+TRACE_COVERAGE: entry point, call-return, statement, decision, boolean operand 
+effectiveness, 
+                for "*" in context "*"
+===========================================================================
+= Cantata Test Harness v9.0                                               =
+= (c) 2019 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Test Description: values_check                                          =
+=    Configuration: x86-Win32-gcc4.6.2                                    =
+=     Test Started: Tue Jun 04 12:50:03 2019                              =
+===========================================================================
+------------------------- Start Test: System Invalid
+
+Call system_valid stubbed to return ERROR, expect checked_status [GD]= ERROR, expect return = ERROR
+
+    Start Call Sequence Validation:
+    Expected calls: system_valid#Invalid_Data
+"values_check"                   function entered {
+values_check.c(49):values_check(int ,int ,int ,int ,unsigned short ,unsigned 
+short ,unsigned short )
+values_check.c(58):                     stmnt    1 (declaration)
+values_check.c(62):                     stmnt    2 (loop)
+values_check.c(62):                      decn    1 (for)    branch FALSE
+values_check.c(68):                     stmnt    5 (cond)
+
+        PASSED: Function: system_valid
+        PASSED: Instance: Invalid_Data
+        Call sequence matched so far: 
+        system_valid#Invalid_Data
+values_check.c(68):                      call    1 (global-fn) completed
+values_check.c(100):                     decn    2 (if)     branch FALSE
+values_check.c(102):                    stmnt   18 (other)
+values_check.c(103):                    stmnt   19 (return)
+"values_check"                   function exited  }
+        PASSED: Check: returnValue = ERROR
+                value: 3
+        PASSED: Check: checked_status = ERROR
+                value: 3
+
+    End Call Sequence Validation:
+
+    Call sequence matched: 
+    system_valid#Invalid_Data
+
+------------------------- End Test: System Invalid
+
+------------------------- Start Test: Share Error - Div by 0
+
+if c + d are both 0, expect share [GD] = ERROR, expect return = ERROR 
+
+    Start Call Sequence Validation:
+    Expected calls: system_valid#Valid_Data
+"values_check"                   function entered {
+values_check.c(49):values_check(int ,int ,int ,int ,unsigned short ,unsigned 
+short ,unsigned short )
+values_check.c(58):                     stmnt    1 (declaration)
+values_check.c(62):                     stmnt    2 (loop)
+values_check.c(62):                      decn    1 (for)    branch FALSE
+values_check.c(68):                     stmnt    5 (cond)
+
+        PASSED: Function: system_valid
+        PASSED: Instance: Valid_Data
+        Call sequence matched so far: 
+        system_valid#Valid_Data
+values_check.c(68):                      call    1 (global-fn) completed
+values_check.c(68):                      decn    2 (if)     branch TRUE
+values_check.c(70):                     stmnt    6 (other)
+values_check.c(71):                     stmnt    7 (other)
+values_check.c(72):                     stmnt    8 (other)
+values_check.c(74):                     stmnt    9 (cond)
+values_check.c(74):                      decn    3 (if)     branch TRUE
+values_check.c(76):                     stmnt   10 (other)
+values_check.c(77):                     stmnt   11 (return)
+"values_check"                   function exited  }
+        PASSED: Check: returnValue = ERROR
+                value: 3
+        PASSED: Check: share = ERROR
+                value: 3
+
+    End Call Sequence Validation:
+
+    Call sequence matched: 
+    system_valid#Valid_Data
+
+------------------------- End Test: Share Error - Div by 0
+
+Not running test Test 1 of 144
+Not running test Test 2 of 144
+Not running test Test 3 of 144
+Not running test Test 4 of 144
+Not running test Test 5 of 144
+Not running test Test 6 of 144
+Not running test Test 7 of 144
+Not running test Test 8 of 144
+Not running test Test 9 of 144
+Not running test Test 10 of 144
+Not running test Test 11 of 144
+Not running test Test 12 of 144
+Not running test Test 13 of 144
+Not running test Test 14 of 144
+Not running test Test 15 of 144
+Not running test Test 16 of 144
+Not running test Test 17 of 144
+Not running test Test 18 of 144
+Not running test Test 19 of 144
+Not running test Test 20 of 144
+Not running test Test 21 of 144
+Not running test Test 22 of 144
+Not running test Test 23 of 144
+Not running test Test 24 of 144
+Not running test Test 25 of 144
+Not running test Test 26 of 144
+Not running test Test 27 of 144
+Not running test Test 28 of 144
+Not running test Test 29 of 144
+Not running test Test 30 of 144
+Not running test Test 31 of 144
+Not running test Test 32 of 144
+Not running test Test 33 of 144
+Not running test Test 34 of 144
+Not running test Test 35 of 144
+Not running test Test 36 of 144
+Not running test Test 37 of 144
+Not running test Test 38 of 144
+Not running test Test 39 of 144
+Not running test Test 40 of 144
+Not running test Test 41 of 144
+Not running test Test 42 of 144
+Not running test Test 43 of 144
+Not running test Test 44 of 144
+Not running test Test 45 of 144
+Not running test Test 46 of 144
+Not running test Test 47 of 144
+Not running test Test 48 of 144
+Not running test Test 49 of 144
+Not running test Test 50 of 144
+Not running test Test 51 of 144
+Not running test Test 52 of 144
+Not running test Test 53 of 144
+Not running test Test 54 of 144
+Not running test Test 55 of 144
+Not running test Test 56 of 144
+Not running test Test 57 of 144
+Not running test Test 58 of 144
+Not running test Test 59 of 144
+Not running test Test 60 of 144
+Not running test Test 61 of 144
+Not running test Test 62 of 144
+Not running test Test 63 of 144
+Not running test Test 64 of 144
+Not running test Test 65 of 144
+Not running test Test 66 of 144
+Not running test Test 67 of 144
+Not running test Test 68 of 144
+Not running test Test 69 of 144
+Not running test Test 70 of 144
+Not running test Test 71 of 144
+Not running test Test 72 of 144
+Not running test Test 73 of 144
+Not running test Test 74 of 144
+Not running test Test 75 of 144
+Not running test Test 76 of 144
+Not running test Test 77 of 144
+Not running test Test 78 of 144
+Not running test Test 79 of 144
+Not running test Test 80 of 144
+Not running test Test 81 of 144
+Not running test Test 82 of 144
+Not running test Test 83 of 144
+Not running test Test 84 of 144
+Not running test Test 85 of 144
+Not running test Test 86 of 144
+Not running test Test 87 of 144
+Not running test Test 88 of 144
+Not running test Test 89 of 144
+Not running test Test 90 of 144
+Not running test Test 91 of 144
+Not running test Test 92 of 144
+Not running test Test 93 of 144
+Not running test Test 94 of 144
+Not running test Test 95 of 144
+Not running test Test 96 of 144
+Not running test Test 97 of 144
+Not running test Test 98 of 144
+Not running test Test 99 of 144
+Not running test Test 100 of 144
+Not running test Test 101 of 144
+Not running test Test 102 of 144
+Not running test Test 103 of 144
+Not running test Test 104 of 144
+Not running test Test 105 of 144
+Not running test Test 106 of 144
+Not running test Test 107 of 144
+Not running test Test 108 of 144
+Not running test Test 109 of 144
+Not running test Test 110 of 144
+Not running test Test 111 of 144
+Not running test Test 112 of 144
+Not running test Test 113 of 144
+Not running test Test 114 of 144
+Not running test Test 115 of 144
+Not running test Test 116 of 144
+Not running test Test 117 of 144
+Not running test Test 118 of 144
+Not running test Test 119 of 144
+Not running test Test 120 of 144
+Not running test Test 121 of 144
+Not running test Test 122 of 144
+Not running test Test 123 of 144
+Not running test Test 124 of 144
+Not running test Test 125 of 144
+Not running test Test 126 of 144
+Not running test Test 127 of 144
+Not running test Test 128 of 144
+Not running test Test 129 of 144
+Not running test Test 130 of 144
+Not running test Test 131 of 144
+Not running test Test 132 of 144
+Not running test Test 133 of 144
+Not running test Test 134 of 144
+Not running test Test 135 of 144
+Not running test Test 136 of 144
+Not running test Test 137 of 144
+Not running test Test 138 of 144
+Not running test Test 139 of 144
+Not running test Test 140 of 144
+Not running test Test 141 of 144
+Not running test Test 142 of 144
+Not running test Test 143 of 144
+Not running test Test 144 of 144
+Not running test BBox Low (1/144)
+Not running test BBox OK (18/144)
+Not running test BBox High (36/144)
+Not running test WBox Low (1/144)
+Not running test WBox OK (18/144)
+Not running test WBox High (36/144)
+------------------------- Start Test: COVERAGE RULE SET
+
+EN50128 2011 SIL 4 component level BC+CC my text string (HR)
+GET_COVERAGE_MIN: entry point coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 0.0%
+
+>>  FAILED: Check Range: 100% Entry Point Coverage
+           actual: 0
+            lower: 100
+            upper: 100
+GET_COVERAGE_MIN: statement coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 0.0%
+
+>>  FAILED: Check Range: 100% Statement Coverage
+           actual: 0
+            lower: 100
+            upper: 100
+GET_COVERAGE_MIN: decision coverage (feasible only, including catch-clauses)
+                  for "*" in context "*" = 0.0%
+
+>>  FAILED: Check Range: 100% Decision Coverage
+           actual: 0
+            lower: 100
+            upper: 100
+GET_COVERAGE_MIN: boolean operand effectiveness (feasible only, including 
+catch-clauses)
+                  for "*" in context "*" = 0.0%
+
+>>  FAILED: Check Range: 100% Boolean Operand Effectiveness Coverage
+           actual: 0
+            lower: 100
+            upper: 100
+-----------------------------------------------------------------------------
+Coverage results for  entry point, statement, decision, boolean operand 
+effectiveness, 
+                 for "*" in context "*"
+                 with executed and un-executed details
+                 feasible only, including catch-clauses
+-----------------------------------------------------------------------------
+values_check.c(32):high_value_check()
+entry point coverage details (with executed and un-executed cases)
+
+values_check.c(32):         entry   1                        >> NOT EXECUTED 
+
+"high_value_check"                                       executed           0
+"high_value_check"                                    un-executed           1
+"high_value_check"                           entry point coverage        0.0%
+
+values_check.c(18):low_value_check()
+entry point coverage details (with executed and un-executed cases)
+
+values_check.c(18):         entry   1                        >> NOT EXECUTED 
+
+"low_value_check"                                        executed           0
+"low_value_check"                                     un-executed           1
+"low_value_check"                            entry point coverage        0.0%
+
+values_check.c(49):values_check(int ,int ,int ,int ,unsigned short ,unsigned 
+short ,unsigned short )
+entry point coverage details (with executed and un-executed cases)
+
+values_check.c(49):         entry   1                                       2
+
+"values_check"                                           executed           1
+"values_check"                                        un-executed           0
+"values_check"                               entry point coverage      100.0%
+
+values_check.c(32):high_value_check()
+statement coverage details (with executed and un-executed cases)
+
+values_check.c(35):         stmnt   1 (cond)                 >> NOT EXECUTED 
+values_check.c(37):         stmnt   2 (other)                >> NOT EXECUTED 
+values_check.c(41):         stmnt   3 (other)                >> NOT EXECUTED 
+values_check.c(43):         stmnt   4 (return)               >> NOT EXECUTED 
+
+"high_value_check"                                       executed           0
+"high_value_check"                                    un-executed           4
+"high_value_check"                             statement coverage        0.0%
+
+values_check.c(18):low_value_check()
+statement coverage details (with executed and un-executed cases)
+
+values_check.c(21):         stmnt   1 (cond)                 >> NOT EXECUTED 
+values_check.c(23):         stmnt   2 (other)                >> NOT EXECUTED 
+values_check.c(27):         stmnt   3 (other)                >> NOT EXECUTED 
+values_check.c(29):         stmnt   4 (return)               >> NOT EXECUTED 
+
+"low_value_check"                                        executed           0
+"low_value_check"                                     un-executed           4
+"low_value_check"                              statement coverage        0.0%
+
+values_check.c(49):values_check(int ,int ,int ,int ,unsigned short ,unsigned 
+short ,unsigned short )
+statement coverage details (with executed and un-executed cases)
+
+values_check.c(58):         stmnt   1 (declaration)                         2
+values_check.c(62):         stmnt   2 (loop)                                2
+values_check.c(62):         stmnt   3 (loop)                 >> NOT EXECUTED 
+values_check.c(63):         stmnt   4 (other)                >> NOT EXECUTED 
+values_check.c(68):         stmnt   5 (cond)                                2
+values_check.c(70):         stmnt   6 (other)                               1
+values_check.c(71):         stmnt   7 (other)                               1
+values_check.c(72):         stmnt   8 (other)                               1
+values_check.c(74):         stmnt   9 (cond)                                1
+values_check.c(76):         stmnt  10 (other)                               1
+values_check.c(77):         stmnt  11 (return)                              1
+values_check.c(81):         stmnt  12 (other)                >> NOT EXECUTED 
+values_check.c(84):         stmnt  13 (cond)                 >> NOT EXECUTED 
+values_check.c(86):         stmnt  14 (other)                >> NOT EXECUTED 
+values_check.c(90):         stmnt  15 (cond)                 >> NOT EXECUTED 
+values_check.c(92):         stmnt  16 (other)                >> NOT EXECUTED 
+values_check.c(96):         stmnt  17 (other)                >> NOT EXECUTED 
+values_check.c(102):        stmnt  18 (other)                               1
+values_check.c(103):        stmnt  19 (return)                              1
+values_check.c(106):        stmnt  20 (return)               >> NOT EXECUTED 
+
+"values_check"                                           executed          11
+"values_check"                                        un-executed           9
+"values_check"                                 statement coverage       55.0%
+
+values_check.c(32):high_value_check()
+decision coverage details (with executed and un-executed cases)
+
+values_check.c(35):          decn   1 (if)     branch TRUE   >> NOT EXECUTED 
+values_check.c(39):          decn   1 (if)     branch FALSE  >> NOT EXECUTED 
+
+"high_value_check"                                       executed           0
+"high_value_check"                                    un-executed           2
+"high_value_check"                              decision coverage        0.0%
+
+values_check.c(18):low_value_check()
+decision coverage details (with executed and un-executed cases)
+
+values_check.c(21):          decn   1 (if)     branch TRUE   >> NOT EXECUTED 
+values_check.c(25):          decn   1 (if)     branch FALSE  >> NOT EXECUTED 
+
+"low_value_check"                                        executed           0
+"low_value_check"                                     un-executed           2
+"low_value_check"                               decision coverage        0.0%
+
+values_check.c(49):values_check(int ,int ,int ,int ,unsigned short ,unsigned 
+short ,unsigned short )
+decision coverage details (with executed and un-executed cases)
+
+values_check.c(62):          decn   1 (for)    branch TRUE   >> NOT EXECUTED 
+values_check.c(62):          decn   1 (for)    branch FALSE                 2
+values_check.c(68):          decn   2 (if)     branch TRUE                  1
+values_check.c(100):         decn   2 (if)     branch FALSE                 1
+values_check.c(74):          decn   3 (if)     branch TRUE                  1
+values_check.c(79):          decn   3 (if)     branch FALSE  >> NOT EXECUTED 
+values_check.c(84):          decn   4 (if)     branch TRUE   >> NOT EXECUTED 
+values_check.c(88):          decn   4 (if)     branch FALSE  >> NOT EXECUTED 
+values_check.c(90):          decn   5 (if)     branch TRUE   >> NOT EXECUTED 
+values_check.c(94):          decn   5 (if)     branch FALSE  >> NOT EXECUTED 
+
+"values_check"                                           executed           4
+"values_check"                                        un-executed           6
+"values_check"                                  decision coverage       40.0%
+
+values_check.c(32):high_value_check()
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+values_check.c(35):          expr   1 (A||B)                                 
+values_check.c(35):          expr   1 A                      >> NOT EFFECTIVE
+values_check.c(35):          expr   1 B                      >> NOT EFFECTIVE
+
+"high_value_check"                                      effective           0
+"high_value_check"                                  not effective           2
+"high_value_check"                          boolean eff. coverage        0.0%
+
+values_check.c(18):low_value_check()
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+values_check.c(21):          expr   1 (A||B)                                 
+values_check.c(21):          expr   1 A                      >> NOT EFFECTIVE
+values_check.c(21):          expr   1 B                      >> NOT EFFECTIVE
+
+"low_value_check"                                       effective           0
+"low_value_check"                                   not effective           2
+"low_value_check"                           boolean eff. coverage        0.0%
+
+values_check.c(49):values_check(int ,int ,int ,int ,unsigned short ,unsigned 
+short ,unsigned short )
+boolean operand effectiveness coverage details (with executed and un-executed 
+cases)
+
+
+"values_check"                                          effective           0
+"values_check"                                      not effective           0
+"values_check"                              boolean eff. coverage      100.0%
+
+Summary by     EXECUTED     Overall                Statistics
+Coverage type  INFEASIBLES  (wavg)     avg /    min /    max /    dev /   num
+-----------------------------------------------------------------------------
+entry point            0    33.3%    33.3% /   0.0% / 100.0% /  57.7% /     3
+statement              0    39.2%    18.3% /   0.0% /  55.0% /  31.7% /     3
+decision               0    28.5%    13.3% /   0.0% /  40.0% /  23.0% /     3
+boolean eff.           0     0.0%    33.3% /   0.0% / 100.0% /  57.7% /     3
+-----------------------------------------------------------------------------
+
+
+------------------------- End Test: COVERAGE RULE SET
+
+EXPORT_COVERAGE: coverage data written to "test_values_check.cov"
+===========================================================================
+= Test Finished: Tue Jun 04 12:50:03 2019                                 =
+=-------------------------------------------------------------------------=
+= Test                 Script  Checks  Checks  Checks  Call Seq     TEST  =
+= Case                 Errors  Failed  Passed  Warned  Failures    RESULT =
+=-------------------------------------------------------------------------=
+= System Invalid            0       0       2       0         0      PASS =
+= Share Error - Div         0       0       2       0         0      PASS =
+= COVERAGE RULE SET         0       4       0       0         0   >> FAIL =
+= Other                     0       0       0       0         0      PASS =
+=-------------------------------------------------------------------------=
+= TOTALS                    0       4       4       0         0   >> FAIL =
+===========================================================================

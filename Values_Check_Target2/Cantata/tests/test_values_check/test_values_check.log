@@ -28,10 +28,10 @@ Running test_values_check ...
 = Test Description: values_check                                          =
 =         Log File: test_values_check.ctr                                 =
 =    Configuration: x86-Win32-gcc4.6.2                                    =
-=     Test Started: Tue May 28 07:09:53 2019                              =
+=     Test Started: Tue Jun 04 12:50:03 2019                              =
 ===========================================================================
 ===========================================================================
-= Test Finished: Tue May 28 07:09:53 2019                                 =
+= Test Finished: Tue Jun 04 12:50:03 2019                                 =
 =-------------------------------------------------------------------------=
 = Test                 Script  Checks  Checks  Checks  Call Seq     TEST  =
 = Case                 Errors  Failed  Passed  Warned  Failures    RESULT =
