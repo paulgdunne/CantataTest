@@ -1,0 +1,19 @@
+#
+# Cantata Test-Level Options
+#
+# Any options set in this file will override the options set in the
+# project-level options file.
+#
+# WARNING: Do not alter this file manually.
+#
+#tool.use=false
+#tool.testid=015a4592-3782-4753-88b9-dfb06ff87fad
+"--ci:--instr:stmt;func;decn;log;"
+"--parse:-W0"
+"--sm:--access_function:"values_check.c":low_value_check()"
+"--sm:--access_function:"values_check.c":high_value_check()"
+"--sm:--access_variable:"values_check.c":average_b"
+"--sm:--wrap:high_value_check()#values_check(int ,int ,int ,int ,unsigned short ,unsigned short ,unsigned short )"
+"--sm:--wrap:low_value_check()#values_check(int ,int ,int ,int ,unsigned short ,unsigned short ,unsigned short )"
+
+#User Section

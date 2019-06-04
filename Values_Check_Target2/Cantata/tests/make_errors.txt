@@ -1,0 +1,5 @@
+make[1]: *** No rule to make target `test_values_check/custom_pre_build', needed by `test_values_check/do_all'.
+make[2]: *** [test_values_check/build_and_run] Error 1
+make[1]: *** [test_values_check/make_test] Error 2
+make[1]: *** No rule to make target `test_values_check/custom_post_build', needed by `test_values_check/do_all'.
+make[1]: Target `test_values_check/do_all' not remade because of errors.

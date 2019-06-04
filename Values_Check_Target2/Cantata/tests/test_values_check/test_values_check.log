@@ -1,0 +1,46 @@
+test_values_check/test.mk:60: warning: undefined variable `QAC_CMD'
+Compiling (C) ... ../../values_check.c -> test_values_check/values_check.o
+Cantata CPPCCD v9.0 (c) 2019 QA Systems GmbH
+Section: x86-Win32-gcc4.6.2
+ - registered as an AUTHORISED PLATFORM
+Processing ../../values_check.c
+Cantata CPPI   v9.0 (c) 2019 QA Systems GmbH
+Compiling with "gcc"
+Compiling (C) ... test_values_check/test_values_check.c -> test_values_check/test_values_check.o
+Cantata CPPCCD v9.0 (c) 2019 QA Systems GmbH
+Section: x86-Win32-gcc4.6.2
+ - registered as an AUTHORISED PLATFORM
+Processing test_values_check/test_values_check.c
+Cantata CPPI   v9.0 (c) 2019 QA Systems GmbH
+Compiling with "gcc"
+Linking (C) test_values_check/test_values_check.exe ...
+Cantata CPPCCD v9.0 (c) 2019 QA Systems GmbH
+Section: x86-Win32-gcc4.6.2
+ - registered as an AUTHORISED PLATFORM
+Cantata CPPTI  v9.0 (c) 2019 QA Systems GmbH
+Linking with "gcc"
+Built test_values_check successfully
+Running test_values_check ...
+===========================================================================
+= Cantata Test Harness v9.0                                               =
+= (c) 2019 QA Systems GmbH                                                =
+=-------------------------------------------------------------------------=
+= Test Description: values_check                                          =
+=         Log File: test_values_check.ctr                                 =
+=    Configuration: x86-Win32-gcc4.6.2                                    =
+=     Test Started: Tue May 28 07:09:53 2019                              =
+===========================================================================
+===========================================================================
+= Test Finished: Tue May 28 07:09:53 2019                                 =
+=-------------------------------------------------------------------------=
+= Test                 Script  Checks  Checks  Checks  Call Seq     TEST  =
+= Case                 Errors  Failed  Passed  Warned  Failures    RESULT =
+=-------------------------------------------------------------------------=
+= System Invalid            0       0       2       0         0      PASS =
+= Share Error - Div         0       0       2       0         0      PASS =
+= COVERAGE RULE SET         0       4       0       0         0   >> FAIL =
+= Other                     0       0       0       0         0      PASS =
+=-------------------------------------------------------------------------=
+= TOTALS                    0       4       4       0         0   >> FAIL =
+===========================================================================
+Test complete
