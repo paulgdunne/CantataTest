@@ -19,20 +19,20 @@ pipeline {
            //  }
             }
          }
-        stage('Generating Autotest Script') {
-            environment {
-                PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;$PATH"
-            }
-            steps {
-                echo "Generating Autotest Script ..."
-                	dir("Values_Check_Target2"){
-                        bat 'ipg_comp --optfile ../ipg.cop --comp gcc -IC:/qa_systemsc/cantata/inc -O0 -g3 -c -fmessage-length=0 -o values_check.o values_check.c'
-                        bat 'cantpp -application com.ipl.products.eclipse.cantpp.testscript.AutoTestGenerator -noSplash -data ../ sourceDirectory=. overwrite=true'
-              //          bat 'cantpp -application com.ipl.products.eclipse.cantpp.testscript.AutoTestGenerator -noSplash -data ../ sourceDirectory=.'
-
-                    }
-            }
-        }
+//        stage('Generating Autotest Script') {
+//            environment {
+//                PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;$PATH"
+//            }
+//            steps {
+//                echo "Generating Autotest Script ..."
+//                	dir("Values_Check_Target2"){
+//                        bat 'ipg_comp --optfile ../ipg.cop --comp gcc -IC:/qa_systemsc/cantata/inc -O0 -g3 -c -fmessage-length=0 -o values_check.o values_check.c'
+//              //          bat 'cantpp -application com.ipl.products.eclipse.cantpp.testscript.AutoTestGenerator -noSplash -data ../ sourceDirectory=. overwrite=true'
+//                        bat 'cantpp -application com.ipl.products.eclipse.cantpp.testscript.AutoTestGenerator -noSplash -data ../ sourceDirectory=.'
+//
+//                    }
+//            }
+//        }
         stage('Running Cantata Tests') {
             environment {
                 PATH = "C:\\qa_systems\\cantata;C:\\qa_systems\\cantata\\MinGW\\msys\\1.0\\bin;$PATH"
